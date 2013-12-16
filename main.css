@@ -1,0 +1,110 @@
+body {
+  padding-bottom: 40px;
+  /*background-image: url(imgs/diagonal.png)*/
+  text-align:center;
+  background-color:#fff;
+}
+
+#site-container{
+  width:1000px;
+  display:inline-block;
+}
+
+/* Custom container */
+.container-narrow {
+  margin: 0 auto;
+  /*max-width: 900px;*/
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  margin: 0px 0;
+  padding:0px;
+  text-align: center;
+}
+hr{
+  padding:0px;
+  margin:0px;
+}
+#topspace{
+  height:40px;
+}
+#navbar{
+  height:30px;
+  margin-bottom: 5px;
+}
+#navbar-left{
+  display:inline-block;
+  width:300px;
+}
+#navbar-right{
+  width:600px;
+  text-align: right;
+  display:inline-block;
+}
+.navbar-button{
+  /*border:solid 1px #000;*/
+  text-align: center;
+  width: 120px;
+  height:25px;
+  padding-top:5px;
+  color:#00648e;
+  font-size:14px;
+  font-weight: bold;
+  /*border-left:solid 1px #ccc;*/
+  display:inline-block;
+}
+.info-container{
+  margin:20px;
+  display:inline-block;
+}
+.info-container-image-left{
+  width:360px;
+  text-align: left;
+  display:inline-block;
+}
+.info-container-image-right{
+  width:360px;
+  text-align: right;
+  display:inline-block;
+}
+.info-container-text-right{
+  width:540px;
+  display:inline-block;
+  color:#888;
+}
+.info-container-text-left{
+  width:540px;
+  display:inline-block;
+  color:#888;
+}
+.navbar-button:hover{
+  border-bottom:solid 2px #a7daef;
+  color:#a7daef;
+  cursor:pointer;
+}
+#winter-carnival-button{
+  width:140px;
+  border:none;
+}
+#banner-container{
+  background-color:#fff;
+}
+#banner{
+  /*border-right:solid 1px #ccc;*/
+  /*border-left:solid 1px #ccc;*/
+  width:900px;
+  background-color:#fff;
+}
+#below-banner{
+  /*background-color:#000;*/
+  height:120px;
+  margin-bottom: 40px;
+}
+#canvas{
+  width:900px;
+  height:120px;
+}
