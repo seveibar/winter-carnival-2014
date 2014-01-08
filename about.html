@@ -11,7 +11,7 @@ http://getbootstrap.com/2.3.2/examples/marketing-narrow.html
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Winter Carnvival 2014</title>
+    <title>Winter Carnival 2014</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -19,9 +19,7 @@ http://getbootstrap.com/2.3.2/examples/marketing-narrow.html
     <!-- Le styles -->
     <link href="bootstrap.css" rel="stylesheet">
     <script src='jquery.js'></script>
-    <script src='jcarousel.js'></script>
     <link href="main.css" rel="stylesheet">
-    <link href="carousel.css" rel="stylesheet">
     <!-- <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet"> -->
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -34,12 +32,12 @@ http://getbootstrap.com/2.3.2/examples/marketing-narrow.html
   <body>
     <div id='site-container'>
       <hr>
-      <div id='topspace'></div>
+      <!-- <div id='topspace'></div> -->
 
       <div id='navbar'>
         <div id='navbar-left'>
-          <a id='winter-carnival-button' href='index.html' class='navbar-button'>
-          Winter Carnival 2014
+          <a href='index.html' id='winter-carnival-button'>
+          <img src='imgs/home-page-link.png'/>
           </a>
         </div>
         <div id='navbar-right'>
@@ -58,54 +56,51 @@ http://getbootstrap.com/2.3.2/examples/marketing-narrow.html
         </div>
       </div>
 
-      <hr id='below-navbar'>
+      <!-- <hr id='below-navbar'> -->
 
       <!-- CONTENT AREA -->
+     <!-- <img src='http://placehold.it/900x430/cccccc/888888/png&text=Banner'/> -->
+    <img class='simple-image-border' src='imgs/banner.jpg'/>
 
-      <img src='http://placehold.it/900x320/cccccc/888888/png&text=Banner'/>  
+      <!-- <hr> -->
+      <div id='info-content'>
       <div class='info-container'>
-        <div class='info-container-image-left'>
-          <img src='http://placehold.it/250x250/cccccc/888888/png'/>
+          <div class='info-container-text-left'>
+            The <b>RPI Winter Carnival</b> began in 1949 as "Winter Weekend", an event organized by the Rensselaer Outing Club before the "Snowflake Saturnalia" dance. It included ice skating, a snow sculpture contest, bobsledding and ski races. 
+            <br/><br/>
+            The winter carnival continued to be held annually throughout the 1960s.
+          </div>
+          <div class='info-container-image-right'>
+            <img src='imgs/old-bicycle.png'/>
+          </div>
         </div>
-        <div class='info-container-text-right'>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </div>
-      </div>
-      <hr>
-      <div class='info-container'>
-        <div class='info-container-image-left'>
-          <img src='http://placehold.it/250x250/cccccc/888888/png'/>
-        </div>
-        <div class='info-container-text-right'>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </div>
-      </div>
-      <hr>
-      <div class='info-container'>
-        <div class='info-container-image-left'>
-          <img src='http://placehold.it/250x250/cccccc/888888/png'/>
-        </div>
-        <div class='info-container-text-right'>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </div>
-      </div>
-      <hr>
+        <hr>
+        <div class='info-container'>
+          <div class='info-container-text-left'>
+            In 1978, the winter carnival was revived only to die again in the 1980s. The carnival was once again revived in 2009 and has continued since.
 
+            <br/><br/>
+
+            Click here to see more information on <a href='http://archives.rpi.edu/blog/2009/02/19/winter-carnival/'>the history of the <b>RPI Winter Carnival.</b></a>
+          </div>
+          <div class='info-container-image-right'>
+            <img src='imgs/old-snowman.png'/>
+          </div>
+        </div>
+        <hr>
+        <div class='info-container'>
+          <div class='info-container-image-left'>
+          <!-- Optimize this image size -->
+            <img src='imgs/fire-and-ice.png' width='250' height='250'/>
+          </div>
+          <p class='info-container-text-right'>
+            This years winter carnival, <b>Arctic Frost</b> will feature a series of winter themed activities and games including ice skating, food, live music, comedic performances by Rensselaer student groups and much more!
+
+            <br/><br/>
+
+            Check out our <a href="https://www.facebook.com/rpiwintercarnival" >facebook group</a> for more info.
+          </p>
+        </div>
 
       <!-- END CONTENT AREA -->
 
@@ -114,11 +109,12 @@ http://getbootstrap.com/2.3.2/examples/marketing-narrow.html
           RPI Winter Carnival 2014
         </div>
         <div id='footer-right'>
-          <a href='#'>About</a>
-          <a href='#'>Competitions</a>
-          <a href='#'>Schedule</a>
-          <a href='#'>Contact</a>
+          <a href='about.html'>About</a>
+          <a href='competitions.html'>Competitions</a>
+          <a href='schedules.html'>Schedule</a>
+          <a href='contact.html'>Contact</a>
         </div>
+      </div>
       </div>
       </div>
 

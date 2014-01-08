@@ -28,13 +28,26 @@ window.onload = function(){
 
   highlightCircle();
 
-  var titles = ["","Super cool text overlay!","Rick touches his residents","So Food! Much good!"]
-  $("#hero-text-overlay").fadeOut(0);
+  var titles = [
+    "Winter Carnival 2014",
+    "Cardboard Sled Racing",
+    "Pushball",
+    "Free Food!"
+  ];
+  var descriptions = [
+    "February 15th",
+    "And more in the Winter Olympics!",
+    "And other fun activities!",
+    "Stop by for lunch or eat with our faculty!"
+  ];
+  // $("#hero-text-overlay").fadeOut(0);
+  $("#hero-text-overlay p").text(titles[currentSlide]);
+  $("#hero-text-overlay span").text(descriptions[currentSlide]);
   $(".carousel-bubble").click(function(){
     var idn = parseInt($(this).attr("id").split("-")[2]);
     var oldSlide = currentSlide;
     currentSlide = idn;
-    timeToMove = 5;
+    timeToMove = 30;
     if (currentSlide > oldSlide){
       carousel.scroll("+=" + (currentSlide - oldSlide));
     }
@@ -43,6 +56,7 @@ window.onload = function(){
     }
     $("#hero-text-overlay").fadeOut(400,function(){
           $("#hero-text-overlay p").text(titles[currentSlide]);
+          $("#hero-text-overlay span").text(descriptions[currentSlide]);
           if (titles[currentSlide] != ""){
             $("#hero-text-overlay").fadeIn();
           }
@@ -57,6 +71,7 @@ window.onload = function(){
         currentSlide = (currentSlide + 1) % numSlides;
         $("#hero-text-overlay").fadeOut(400,function(){
           $("#hero-text-overlay p").text(titles[currentSlide]);
+          $("#hero-text-overlay span").text(descriptions[currentSlide]);
           if (titles[currentSlide] != ""){
             $("#hero-text-overlay").fadeIn();
           }
