@@ -1,16 +1,8 @@
 window.onload = function(){
 
   // Carousel Code
-  $('.jcarousel').jcarousel({
-    wrap:"circular",
-    animation:1000,
-    transitions:Modernizr.csstransitions ? {
-        transforms:   Modernizr.csstransforms,
-        transforms3d: Modernizr.csstransforms3d,
-        easing:       'ease'
-    } : false
-  });
-  var carousel = $(".jcarousel").data("jcarousel");
+
+  carousel.init();
 
   var currentSlide = 0;
   var numSlides = 4;
@@ -48,12 +40,7 @@ window.onload = function(){
     var oldSlide = currentSlide;
     currentSlide = idn;
     timeToMove = 30;
-    if (currentSlide > oldSlide){
-      carousel.scroll("+=" + (currentSlide - oldSlide));
-    }
-    if (currentSlide < oldSlide){
-      carousel.scroll("-=" + (oldSlide - currentSlide));
-    }
+    carousel.moveTo(currentSlide);
     $("#hero-text-overlay").fadeOut(400,function(){
           $("#hero-text-overlay p").text(titles[currentSlide]);
           $("#hero-text-overlay span").text(descriptions[currentSlide]);
@@ -77,7 +64,7 @@ window.onload = function(){
           }
         });
 
-        carousel.scroll("+=1");
+        carousel.moveTo(currentSlide);
         timeToMove = 5;
         highlightCircle();
       }

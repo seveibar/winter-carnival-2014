@@ -112,6 +112,9 @@ table tr{
   /*border-left:solid 1px #ccc;*/
   display:inline-block;
 }
+.slide{
+  display:inline-block;
+}
 #info-content{
   margin-top:30px;
   /*border-top-left-radius:10px;
