@@ -60,7 +60,7 @@ body {
   /*border-top:solid 10px #DCECEF;*/
   /*background-color:#DCECEF;*/
   height:500px;
-  overflow: none;
+  /*overflow:hidden;*/
 }
 hr{
   padding:0px;
@@ -80,15 +80,14 @@ table tr{
   height:40px;
   margin-bottom: 20px;
   padding-bottom:10px;
-  padding-top:0px;
   border-bottom:solid 4px #7BBFCA;
   background-color:#fff;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-#navbar-right a:first-of-type{
+/*#navbar-right a:first-of-type{
   border-left:solid 1px #DDEDEF;
-}
+}*/
 #navbar-left{
   display:inline-block;
   text-align: left;
@@ -102,17 +101,14 @@ table tr{
 .navbar-button{
   /*border:solid 1px #000;*/
   text-align: center;
-  border-right:solid 1px #DDEDEF;
+  /*border-right:solid 1px #DDEDEF;*/
   width: 120px;
   height:25px;
   padding-top:5px;
   color:#00648e;
   font-size:14px;
   font-weight: bold;
-  /*border-left:solid 1px #ccc;*/
-  display:inline-block;
-}
-.slide{
+  margin-bottom: 5px;
   display:inline-block;
 }
 #info-content{
@@ -150,6 +146,8 @@ table tr{
 .navbar-hit{
   /*border-bottom:solid 2px #7BBFCA;*/
   color:#7BBFCA;
+  from
+  border-radius:5px;
   text-decoration: none;
   cursor:pointer;
 }
@@ -175,10 +173,16 @@ table tr{
   background-color:rgba(0,0,0,.75);
   color:#fff;
 }
+#hero-text-overlay .dateslide{
+  font-size : 32px;
+  padding-top: 0;
+  background-color:rgba(0,0,0,.75);
+}
 #hero-text-overlay span{
   font-size:18px;
   font-weight: bold;
   padding:4px;
+  padding-left : 8px;
   background-color:rgba(0,0,0,.5);
   color:#fff;
 }

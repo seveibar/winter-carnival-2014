@@ -1,0 +1,11 @@
+X Fix carousel glitch
+X Change food picture
+X Add more to carousel
+X February 15th more prominent
+X facebook group -> Facebook Page
+X Carousel of themes from 2009+ winter carnivals
+- Competitions page, far right image bad
+- Separate trio of images for schedules page
+- All email forwarded to wintercarnival@union.rpi.edu
+- Captcha to prevent spam
+- Return email not optional

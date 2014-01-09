@@ -18,6 +18,7 @@ http://getbootstrap.com/2.3.2/examples/marketing-narrow.html
 
     <!-- Le styles -->
     <link href="bootstrap.css" rel="stylesheet">
+    <link href="carousel.css" rel="stylesheet">
     <script src='jquery.js'></script>
     <link href="main.css" rel="stylesheet">
     <!-- <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet"> -->
@@ -88,17 +89,39 @@ http://getbootstrap.com/2.3.2/examples/marketing-narrow.html
           </div>
         </div>
         <hr>
-        <div class='info-container'>
+        <div class='info-container' style='margin-bottom:-30px'>
           <div class='info-container-image-left'>
           <!-- Optimize this image size -->
-            <img src='imgs/fire-and-ice.png' width='250' height='250'/>
+            <div class='jcarousel' style='width:250px;height:250px'>
+              <div id='carousel-container' style="width:250px;height:250px" >
+                <div id='slide-container'>
+                  <!-- Starting at 2009 -->
+                    <img src='imgs/fire-and-ice.png' id='slide0' width='250' height='250'/>
+                    <!-- Got nothing on 2010,2011 -->
+                    <img src='imgs/northern-lights.jpg' id='slide1' width='250' height='250'/>
+                    <img src='imgs/absolute-zero.png' id='slide2' width='250' height='250'/>
+                    <img src='imgs/rpi_snowflake.png' id='slide3' width='250' height='250'/>
+                </div>
+              </div>
+            </div>
+            <svg class='carousel_arrow' id='carousel_larrow' width="30" height="40">
+                <line x1="25" y1="5" x2="5" y2="20"/>
+                <line x1="5" y1="20" x2="25" y2="35"/>
+            </svg>
+            <svg class='carousel_arrow' id='carousel_rarrow' width="30" height="40">
+                <line x1="5" y1="5" x2="25" y2="20"/>
+                <line x1="25" y1="20" x2="5" y2="35"/>
+            </svg>
+                <div id='carousel_text_small'>
+                Winter Carnival 2014
+                </div>
           </div>
           <p class='info-container-text-right'>
             This years winter carnival, <b>Arctic Frost</b> will feature a series of winter themed activities and games including ice skating, food, live music, comedic performances by Rensselaer student groups and much more!
-
             <br/><br/>
 
-            Check out our <a href="https://www.facebook.com/rpiwintercarnival" >facebook group</a> for more info.
+            Check out our <a href="https://www.facebook.com/rpiwintercarnival" >Facebook Page</a> for more info.
+            <br/><br/><br/><br/><br/><br/><br/>
           </p>
         </div>
 
@@ -118,7 +141,7 @@ http://getbootstrap.com/2.3.2/examples/marketing-narrow.html
       </div>
       </div>
 
-
-    <script type='text/javascript' src='main.js'></script>
+    <script type='text/javascript' src='carousel_notj.js'></script>
+    <script type='text/javascript' src='about.js'></script>
   </body>
 </html>

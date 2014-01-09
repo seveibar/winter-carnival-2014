@@ -6,7 +6,7 @@
     height:500px;
     border-radius:5px;
     border:solid 5px #fff;
-    overflow: none;
+    overflow: hidden;
 }
 
 /*
@@ -21,30 +21,53 @@ Position must be relative!
     overflow: hidden;
 }
 
+.slide{
+  display:inline-block;
+}
+
 /*
 This is the container of the carousel items.
 You must ensure that the position is relative or absolute and
 that the width is big enough to contain all items.
 */
-.jcarousel ul {
-    width: 20000em;
-    position: relative;
+#slide-container{
+    width:1000em;
+    position:relative;
+    margin:0;
+    padding:0;
+    text-align: left;
+}
 
-    /* Optional, required in this case since it's a <ul> element */
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.carousel_arrow{
+    opacity: .5;
+    cursor: pointer;
+}
+
+.carousel_arrow:hover{
+    opacity: .75;
+}
+
+.carousel_arrow line{
+    stroke : rgb(128,128,128);
+    stroke-width:5;
+    stroke-linecap: round;
+}
+
+#carousel_larrow{
+    position:relative;
+    left:-30px;
+    bottom:145px;
+}
+#carousel_rarrow{
+    position:relative;
+    left:220px;
+    bottom:145px;
 }
 
 /*
 These are the item elements. jCarousel works best, if the items
 have a fixed width and height (but it's not required).
 */
-.jcarousel li {
-    /* Required only for block elements like <li>'s */
-    display:inline-block;
-}
-
 #carousel-bubble-container{
     position:relative;
     top:-30px;
@@ -55,4 +78,18 @@ have a fixed width and height (but it's not required).
 .carousel-bubble circle:hover{
     opacity:1;
     cursor:pointer;
+}
+
+#carousel_text_small{
+    position:relative;
+    background-color:rgba(0,0,0,.5);
+    padding:5px;
+    left:-63px;
+    width:235px;
+    height:20px;
+    bottom:40px;
+    color:#fff;
+    font-weight:bold;
+    text-align:center;
+    display:inline-block;
 }
