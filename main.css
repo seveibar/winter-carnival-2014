@@ -1,3 +1,6 @@
+html{
+  height:100%;
+}
 body {
   /*background-image: url(imgs/diagonal.png);*/
   /*background-color:#D4E8EB;*/
@@ -26,12 +29,14 @@ body {
                 transparent 75%, transparent);
   
   background-size:50px 50px;
+  height:100%;
 
   /*background-color:#fff;*/
 }
 
 #site-container{
   width:1000px;
+  min-height:100%;
   /*background-color:#fff;*/
   /*border-left:solid 1px #A5E1EB;*/
   /*border-right:solid 1px #A5E1EB;*/
@@ -212,6 +217,9 @@ table tr{
   height:120px;
 }
 .footer{
+  height:25px;
+  position:relative;
+  bottom:0px;
   /*margin-top:25px;*/
   padding-top:25px;
   color:#00648e;

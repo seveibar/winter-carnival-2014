@@ -1,15 +1,17 @@
 window.onload = function(){
-	var totalSlides = 4;
+	var totalSlides = 5;
 	carousel.init(totalSlides, 250);
 	var cs = 0;
 	var rpi_years = [
-		"2009",
+		"2010",
+		"2011",
 		"2012",
 		"2013",
 		"2014"
 	];
 	var rpi_names = [
 		"Fire & Ice",
+		"Whiteout",
 		"Northern Lights",
 		"Absolute Zero",
 		"Arctic Frost"

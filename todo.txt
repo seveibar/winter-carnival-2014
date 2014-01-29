@@ -1,11 +1,11 @@
-X Fix carousel glitch
-X Change food picture
-X Add more to carousel
-X February 15th more prominent
-X facebook group -> Facebook Page
-X Carousel of themes from 2009+ winter carnivals
-- Competitions page, far right image bad
-- Separate trio of images for schedules page
-- All email forwarded to wintercarnival@union.rpi.edu
-- Captcha to prevent spam
-- Return email not optional
+X Remove Make New Friends
+X Remove Nail Guy
+X Remove ski/snowboarding picture
+X Left picture on schedule page
+X Left Picture on contact page
+X No theme for 2009
+X Add themes for 2010+
+X Schedules should be singular on every page
+X Winter Carnival should be capitalized all throughout the site
+X Year’s needs the apostrophe
+X there should be another comma around Arctic Frost on the about page.

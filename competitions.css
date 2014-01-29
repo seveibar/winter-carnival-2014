@@ -1,0 +1,39 @@
+#competition-info-container{
+	width:1000px;
+	/*background-color:rgba(255,255,255,1);*/
+	/*background-color : rgba(247, 254, 255, .5);*/
+	background-color: #F7FEFF;
+	margin-bottom:-30px;
+}
+#competition-info-container b{
+	margin-bottom: 40px;
+	margin-top : 40px;
+}
+.competition-info img{
+	margin-top:20px;
+}
+.competition-info{
+	width : 900px;
+	height: 300px;
+	margin-left:50px;
+	text-align: left;
+	border-top:2px solid #D4E8EB;
+}
+.nice-text{
+	color:#888888;
+	font-size:14px;
+}
+#competition-info-bg{
+	background-color: #fff;
+	border-top:2px solid #D4E8EB;
+}
+#navbar{
+	margin-bottom: 0;
+	border-radius: 0;
+}
+#below-navbar{
+	margin-bottom: 0;
+}
+#info-content{
+	display:none;
+}

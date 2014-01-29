@@ -3,7 +3,7 @@ window.onload = function(){
   // Carousel Code
 
   var currentSlide = 0;
-  var numSlides = 7;
+  var numSlides = 8;
   var timeToMove = 10;
 
   carousel.init(numSlides,900);
@@ -13,7 +13,7 @@ window.onload = function(){
       if (i == currentSlide){
         $("#carousel-bubble-"+i).css({"opacity":1});
       }else{
-        $("#carousel-bubble-"+i).css({"opacity":.75});
+        $("#carousel-bubble-"+i).css({"opacity":.5});
       }
     }
   }
@@ -48,19 +48,25 @@ window.onload = function(){
     "Cardboard Sled Racing",
     "Pushball",
     "Carnival Games",
-    "Make new friends!",
-    "Yell at your hands!",
-    "Snowboarding"
+    "",
+    "",
+    "",
+    ""
   ];
   var descriptions = [
     "February 15th",
     "And more in the Winter Olympics!",
+    "And other fun activities!",
     "",
     "",
-    "Meet new people from all over campus!",
-    "They know what they did!",
-    "Show off your moves!"
+    "",
+    "",
+    ""
   ];
+
+  function mod(m,n){
+      return ((m%n)+n)%n;
+  }
 
 
   $("#hero-text-overlay p").html(titles[currentSlide]);
@@ -68,11 +74,17 @@ window.onload = function(){
   $("#hero-text-overlay span").html(descriptions[currentSlide]);
   $(".carousel-bubble").click(function(){
     var idn = parseInt($(this).attr("id").split("-")[2]);
-    var oldSlide = currentSlide;
-    currentSlide = idn;
     timeToMove = 15;
     changeSlide(idn);
   });
+  $(".carousel_arrow").click(function(){
+    if (timeToMove <= 14.25){
+      var direction = $(this).attr("id") == "larrow" ? -1 : 1;
+      timeToMove = 15;
+      changeSlide(mod(currentSlide + direction,numSlides));
+    }
+  });
+
 
   setInterval(function(){
       timeToMove -= .25;
