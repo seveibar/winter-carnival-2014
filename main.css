@@ -224,6 +224,7 @@ table tr{
   padding-top:25px;
   color:#00648e;
   padding-bottom: 25px;
+  padding-right:25px;
   background-color:#F0F7F8;
   border-top:4px solid #D4E8EB;
 }
@@ -234,10 +235,18 @@ table tr{
 }
 #footer-right{
   width:450px;
+  float:right;
   text-align: right;
   display:inline-block;
 }
 #footer-right a{
   margin-left:20px;  
   display:inline-block;
+}
+.sponsor-text{
+  font-size:12px;
+  display:block;
+  width:1000px;
+  display:absolute;
+  bottom:10px;
 }

@@ -37,3 +37,42 @@
 #info-content{
 	display:none;
 }
+
+#rules{
+	width:460px;
+	display:inline-block;
+}
+#signup-form{
+	width:440px;
+	display:inline-block;
+	float:right;
+}
+
+form{
+	font-size:14px;
+	color:#888;
+}
+
+.form-label{
+	display:inline-block;
+	margin-right:10px;
+}
+
+form input{
+	border-radius : 5px;
+	border:solid 1px #ccc;
+	padding:5px;
+}
+.form-input-block{
+	margin:10px;
+}
+
+#form_submit{
+	width:100px;
+	color:#444;
+	background-color:#fff;
+	margin-right:120px;
+}
+#form_submit:hover{
+	background-color:#ddd;
+}

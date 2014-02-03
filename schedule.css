@@ -1,0 +1,27 @@
+.schedule-event{
+	display:block;
+	/*border-top:1px solid #D4E8EB;*/
+	text-align:left;
+	font-size:18px;
+	padding:15px;
+	color:#444;
+	vertical-align: top;
+}
+.concourse-list li{
+	font-size:18px;
+	/*font-weight: bold;*/
+	margin-bottom:15px;
+	padding-bottom: 15px;
+	color:#444;
+}
+#dateplace{
+	padding-top:50px;
+	width:1000px;
+	height:150px;
+	font-size:48px;
+	color:#AEC8CC;
+	background-color:#F7FEFF;
+}
+#dateplace div{
+	height:60px;
+}
